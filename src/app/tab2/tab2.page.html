@@ -1,17 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Farm
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div style="align-items: center; justify-content: center; display: flex; margin-top: 100px;">
+    <ion-button (click)="addfarm()" color="warning">Add farm</ion-button>
+  </div>
+  <div style="align-items: center; justify-content: center; display: flex; margin-top: 100px;">
+    <ion-button (click)="delfarm()" color="warning">Delete farm</ion-button>
+  </div>
 </ion-content>
